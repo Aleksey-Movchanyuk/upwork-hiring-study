@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 .DS_Store
 data/
+
+# local references that must never be published
+references/
+writing_skills/
