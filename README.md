@@ -26,7 +26,7 @@ python benchmark_models.py     # the 64-model benchmark (10 to 20 minutes)
 | `public/` | the anonymised CSV, `reproduce.py`, `benchmark_models.py`, results |
 | `scripts/` | the full pipeline (extraction, statistics, models, charts). It needs a private database of captured postings, so it is here for transparency, not to run |
 | `figures/` | the charts |
-| `TECHNICAL_APPENDIX.md`, `TECHNICAL_APPENDIX_RU.md` | formulas, settings, tests and checks (English and Russian) |
+| `TECHNICAL_APPENDIX.md` | formulas, settings, tests and checks |
 
 ## How the data was collected, and its limits
 
