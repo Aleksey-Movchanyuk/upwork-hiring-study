@@ -34,8 +34,6 @@ The postings come from five keyword alerts of one freelancer (automation and AI,
 
 Job text is not shared: it belongs to other people.
 
-## Licence and citation
+## Licence
 
-[Add a licence here, for example MIT for the code and CC BY 4.0 for the data and text.]
-
-[Add citation or article link here.]
+No licence has been chosen yet, so the usual copyright rules apply until one is added.
