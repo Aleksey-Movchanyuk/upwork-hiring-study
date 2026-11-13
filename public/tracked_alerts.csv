@@ -1,0 +1,56 @@
+alert,keyword,negative_keyword,job_type_filter,min_budget,min_hourly_rate,verified_payment_only
+Automation & AI Agents,ai agent,,any,0,,yes
+Automation & AI Agents,n8n,,any,0,,yes
+Automation & AI Agents,long chain,,any,0,,yes
+Automation & AI Agents,workflow automation,,any,0,,yes
+Automation & AI Agents,ai developer,,any,0,,yes
+Automation & AI Agents,ai engineer,,any,0,,yes
+Automation & AI Agents,ai powered,,any,0,,yes
+Automation & AI Agents,ai-powered,,any,0,,yes
+Automation & AI Agents,ai expert,,any,0,,yes
+Automation & AI Agents,ai model,,any,0,,yes
+Automation & AI Agents,ai research,,any,0,,yes
+Automation & AI Agents,machine learning,,any,0,,yes
+Automation & AI Agents,nvidia gpu,,any,0,,yes
+Automation & AI Agents,ai infrastructure,,any,0,,yes
+Automation & AI Agents,ai automation,,any,0,,yes
+Automation & AI Agents,data automation,,any,0,,yes
+Data Engineering & Databases,clickhouse,,any,0,,yes
+Data Engineering & Databases,postgres,,any,0,,yes
+Data Engineering & Databases,postgresql,,any,0,,yes
+Data Engineering & Databases,oracle,,any,0,,yes
+Data Engineering & Databases,etl,,any,0,,yes
+Data Engineering & Databases,dbt,,any,0,,yes
+Data Engineering & Databases,airflow,,any,0,,yes
+Data Engineering & Databases,dwh,,any,0,,yes
+Data Engineering & Databases,databricks,,any,0,,yes
+Data Engineering & Databases,snowflake,,any,0,,yes
+Data Engineering & Databases,data developer,,any,0,,yes
+Data Engineering & Databases,data engineer,,any,0,,yes
+Data Engineering & Databases,data pipeline,,any,0,,yes
+Data Engineering & Databases,data scientist,,any,0,,yes
+Web Scraping & Geo APIs,scraping,,any,0,,yes
+Web Scraping & Geo APIs,web scraping,,any,0,,yes
+Web Scraping & Geo APIs,data scraping,,any,0,,yes
+Web Scraping & Geo APIs,google maps,,any,0,,yes
+Web Scraping & Geo APIs,google places,,any,0,,yes
+Web Scraping & Geo APIs,google places api,,any,0,,yes
+Web Scraping & Geo APIs,data extraction,,any,0,,yes
+Web Scraping & Geo APIs,crawler,,any,0,,yes
+Web Scraping & Geo APIs,web scraper,,any,0,,yes
+Web Scraping & Geo APIs,scrape,,any,0,,yes
+Web Scraping & Geo APIs,scraper,,any,0,,yes
+Web Scraping & Geo APIs,data cleanup,,any,0,,yes
+BI & Reporting,tableau,,any,0,,yes
+BI & Reporting,business intelligence,,any,0,,yes
+BI & Reporting,power bi,,any,0,,yes
+BI & Reporting,superset,,any,0,,yes
+BI & Reporting,oracle bi,,any,0,,yes
+BI & Reporting,metabase,,any,0,,yes
+BI & Reporting,looker,,any,0,,yes
+BI & Reporting,data studio,,any,0,,yes
+Crypto & Web3,cryptocurrency,,any,0,,yes
+Crypto & Web3,solana,,any,0,,yes
+Crypto & Web3,web3,,any,0,,yes
+Crypto & Web3,blockchain,,any,0,,yes
+Crypto & Web3,crypto,,any,0,,yes

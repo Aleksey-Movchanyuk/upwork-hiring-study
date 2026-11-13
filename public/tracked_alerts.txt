@@ -1,0 +1,13 @@
+Alerts I tracked (screenshots of the alert settings, November 2026)
+
+Filters on every alert: no negative keywords, job type Any, min budget 0, no max budget, no hourly-rate filter, no hire-rate or open-jobs filter. The alerts only notify for jobs from clients with a verified payment method.
+
+Automation & AI Agents (16 keywords): ai agent, n8n, long chain, workflow automation, ai developer, ai engineer, ai powered, ai-powered, ai expert, ai model, ai research, machine learning, nvidia gpu, ai infrastructure, ai automation, data automation
+
+Data Engineering & Databases (14 keywords): clickhouse, postgres, postgresql, oracle, etl, dbt, airflow, dwh, databricks, snowflake, data developer, data engineer, data pipeline, data scientist
+
+Web Scraping & Geo APIs (12 keywords): scraping, web scraping, data scraping, google maps, google places, google places api, data extraction, crawler, web scraper, scrape, scraper, data cleanup
+
+BI & Reporting (8 keywords): tableau, business intelligence, power bi, superset, oracle bi, metabase, looker, data studio
+
+Crypto & Web3 (5 keywords): cryptocurrency, solana, web3, blockchain, crypto
