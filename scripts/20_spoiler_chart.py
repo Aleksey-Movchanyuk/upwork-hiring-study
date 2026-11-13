@@ -33,13 +33,13 @@ a1.set_xlim(-0.1, 10); a1.set_ylim(-0.1, 10); a1.set_aspect("equal"); a1.axis("o
 a1.set_title(f"Only {k} of 100 postings end in a hire", fontsize=13, fontweight="bold", loc="left")
 a1.text(0, -0.9, f"{hired:,} of {n:,} postings (orange: hired, grey: not hired)", fontsize=10, va="top")
 
-labels = ["30 random postings", "30 postings picked\nby the checklist"]
+labels = ["30 random postings", "30 postings with the\nbest checklist scores"]
 vals = [rate_random * 30, rate_check * 30]
 bars = a2.bar(labels, vals, color=[GREY, ORANGE], width=0.55)
 for b, v, usd in zip(bars, vals, [usd_random, usd_check]):
     a2.text(b.get_x() + b.get_width() / 2, v + 0.3, f"{fmt(v)} hires\n${fmt(usd, 2)} per hire", ha="center", va="bottom", fontsize=11)
 a2.set_ylim(0, max(vals) * 1.35); a2.set_ylabel("Hires per 30 applications"); a2.spines[["top", "right"]].set_visible(False)
-a2.set_title(f"Each hire costs {saving * 100:.0f}% fewer Connects", fontsize=13, fontweight="bold", loc="left")
+a2.set_title(f"Checklist: {saving * 100:.0f}% fewer Connects per hire", fontsize=13, fontweight="bold", loc="left")
 a2.text(0.5, -0.2, "Test period; 15 Connects at $0.10 per application (assumption)", transform=a2.transAxes, ha="center", fontsize=9, color="#555555")
 fig.tight_layout()
 fig.savefig(FIG / "39_spoiler_hire_share.png", dpi=140)

@@ -284,19 +284,7 @@ print("\nTest AUC of the 10 models best on TEST (optimistic, shown only to size 
       % (tab.test_auc.nlargest(10).mean(), top.test_auc.mean()))
 
 # ------------------------------------------------------------------ figure
-fig, (a1, a2) = plt.subplots(1, 2, figsize=(15, 6.2), gridspec_kw={"width_ratios": [1.25, 1]})
-t = top.iloc[::-1]
-cols = {"Boosting": "#3366CC", "Combination": "#E8833A", "Neural net": "#7B4FA3", "Linear": "#2E8B57", "Trees": "#999999", "Checklist+": "#B22222", "Distance": "#555555", "Kernel": "#555555"}
-a1.barh(t["model"], t["test_auc"], xerr=[t["test_auc"] - t["test_lo"], t["test_hi"] - t["test_auc"]], color=[cols.get(f, "#888") for f in t["family"]], ecolor="black", capsize=2)
-a1.axvline(chk_auc_te, color="black", ls="--"); a1.text(chk_auc_te, 9.6, " seven-question checklist", fontsize=8, va="bottom")
-a1.set_xlim(0.66, 0.8); a1.set_xlabel("Test ROC AUC (95% bootstrap range)"); a1.set_title("Top 10 models, picked on the tuning slice, scored on the test slice", fontsize=11, loc="left")
-a1.tick_params(axis="y", labelsize=8)
-a2.scatter(tab["val_auc"], tab["test_auc"], c=[cols.get(f, "#888") for f in tab["family"]], s=22)
-a2.axhline(chk_auc_te, color="black", ls="--", lw=1); a2.axvline(chk_auc_va, color="black", ls="--", lw=1)
-a2.set_xlim(0.62, 0.76); a2.set_ylim(0.63, 0.76)   # the naive Bayes outlier (0.53, 0.52) is left off the chart
-for fam, colr in [("Boosting", "#3366CC"), ("Combination", "#E8833A"), ("Neural net", "#7B4FA3"), ("Linear", "#2E8B57"), ("Trees", "#999999"), ("Checklist+", "#B22222"), ("Distance and kernel", "#555555")]:
-    a2.scatter([], [], c=colr, s=22, label=fam)
-a2.legend(fontsize=8, loc="lower right")
-a2.set_xlabel("Tuning-slice ROC AUC"); a2.set_ylabel("Test ROC AUC"); a2.set_title("Every model: tuning slice against test slice (dashed = checklist)", fontsize=11, loc="left")
-fig.tight_layout(); fig.savefig(OUT / "benchmark_top10.png", dpi=130)
+pd.DataFrame([{"checklist": "seven-question checklist", "val_auc": chk_auc_va, "test_auc": chk_auc_te}]).to_csv(OUT / "benchmark_checklist.csv", index=False)
+from replot_benchmark import make_figure
+make_figure()
 print("done")
